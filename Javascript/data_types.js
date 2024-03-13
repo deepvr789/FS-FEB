@@ -7,6 +7,12 @@ var storage_Options = [128, 256, 500, 1];
 var isavail = true;
 var discount;
 
+//reading
+console.log(product_Name);
+console.log(brand)
+console.log(prize)
+console.log(color_Options)
+
 
 //finding the type of data
 
