@@ -5,7 +5,7 @@ const categorySelect = document.getElementById('category-select');
 const amountInput = document.getElementById('amount-input');
 const dateInput = document.getElementById('date-input');
 const addBtn = document.getElementById('add-btn');
-const expensesTableBody = document.getElementById('expnese-table-body');
+const expensesTableBody = document.getElementById('expense-table-body');
 const totalAmountCell = document.getElementById('total-amount');
 
 addBtn.addEventListener('click', function() {
