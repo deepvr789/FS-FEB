@@ -5,14 +5,14 @@ import json
 
 fp = open('data.csv', 'r')
 
-reader = csv.DictReader(fp)
+reader = csv.reader(fp)
 
 
 data = []
 
 for row in reader:
-    data.append(dict(row))
-fp = open('Dictdata.json', 'w')
+    data.append((row))
+fp = open('data.json', 'w')
 
 json.dump(data, fp)
 
