@@ -1,12 +1,10 @@
-import Message from "./message"
+import CompA from './components/CompA'
 let App = ()=>{
 
     return <div>
-            <h2>Welcome to React world</h2>
-            <h2>deepak rathod</h2>
-            <hr />
-            <Message/>
-          
+                <h1>App Component</h1>
+                <hr />
+               <CompA/>
             </div>
 }
 
