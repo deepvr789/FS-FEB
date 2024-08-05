@@ -1,6 +1,6 @@
 //using map add 1 to new prices
 let prices = [99,199,299,399,499]
-let newPrices = prices.forEach((price) => price + 1)
+let newPrices = prices.forEachc((price) => price + 1)
 console.log(prices)
 console.log(newPrices) 
 
