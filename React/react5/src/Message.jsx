@@ -7,13 +7,13 @@ class Message extends React.Component{
 
 
     gmhandler=()=>{
-        this.setState({msg:"Good Morning"}) 
+       this.setState({msg:"Good Morning"}) 
         
     }
 
     gnhandler=()=>{
         this.setState({msg:"Good Night"})
-        this.forceUpdate()//executing the render method one more time
+       // this.forceUpdate()executing the render method one more time
     }
 
 
