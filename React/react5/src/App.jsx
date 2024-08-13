@@ -9,6 +9,7 @@ render()  {
          <h1>App Component</h1>
          <hr/>
          <Message/>
+         
          </div>
 }    
 }

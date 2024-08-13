@@ -1,34 +1,23 @@
-import React from "react";
-class Message extends React.Component{
-    //msg ='Hello'
-    state={
-        msg:'Hello'
+import React, { useState } from "react";
+
+
+export default function Message() {
+
+    let[msg,setMsg]= useState("Hello")
+    let gmHandler=()=>{
+        setMsg("Good Morning")
     }
-
-
-    gmhandler=()=>{
-       this.setState({msg:"Good Morning"}) 
-        
+    let gnHandler=()=>{
+        setMsg("Good Night")
     }
+  return (
+    <div>
+        <h1>Message Component</h1>
+        <h3>Value:{msg}</h3>
+        <button onClick={gmHandler}>GM</button>
+        <button onClick={gnHandler}>GN</button>
+        <button onClick={()=>{setMsg("Good Evening")}}>GE</button>
 
-    gnhandler=()=>{
-        this.setState({msg:"Good Night"})
-       // this.forceUpdate()executing the render method one more time
-    }
-
-
-
-    render(){
-        console.log("render")
-        return <div>
-                
-                <h1>Message Component</h1>
-                <hr/>
-                <h3>Message:{this.state.msg}</h3>
-                <button onClick={this.gmhandler} >GM</button>
-                <button onClick={this.gnhandler}>GN</button>
-                </div>
-    }
+        </div>
+  )
 }
-
-export default Message;
