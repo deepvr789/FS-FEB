@@ -2,6 +2,7 @@ import React from "react";
 import Message from "./Message";
 
 
+
 class App extends React.Component{
 
 render()  {
@@ -9,7 +10,6 @@ render()  {
          <h1>App Component</h1>
          <hr/>
          <Message/>
-         
          </div>
 }    
 }
