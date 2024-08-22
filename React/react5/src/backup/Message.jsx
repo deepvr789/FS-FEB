@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import "./Message.css"
+import React from 'react'
+const Message = ()=>{
+    let msgStyle_Internal ={color:"blue"}
 
-
-export default function Message() {
-
-    let[msg,setMsg]= useState("Hello")
-   
-  return (
-    <div>
+    return <div>
         <h1>Message Component</h1>
-        <h3>Value:{msg}</h3>
-        <button onClick={()=>{setMsg("Good Morning")}}>GM</button>
-        <button onClick={()=>{setMsg("Good Night")}}>GN</button>
-        <button onClick={()=>{setMsg("Good Evening")}}>GE</button>
-
-        </div>
-  )
+        <hr />
+        <h1 style={{color:'red', backgroundColor:'lightgreen'}}>Good Morning</h1>
+        <h1 style= {msgStyle_Internal}>Good Evening</h1>
+        <h1 className='msgStyle2'>Good Night</h1>
+    </div>
 }
+export default Message
