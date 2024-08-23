@@ -7,6 +7,8 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Users from './Users/Users'
 import Navbar from './Navbar/Navbar'
+import SignIn from './pages/SignIn'
+import Registration from './pages/Registration'
 const App = () => {
   return <div>
          <RajniRouter>
@@ -17,7 +19,8 @@ const App = () => {
                     <Route path="about" element={<About/>}/>
                     <Route path="services" element={<Services/>}/>
                     <Route path="contact" element={<Contact/>}/>
-                    <Route path="login" element={<Login/>}/>
+                    <Route path="login" element={<SignIn/>}/>
+                    <Route path="reg" element={<Registration/>}/>
                 </Routes>
             </RajniRouter>
           </div>

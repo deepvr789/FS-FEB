@@ -11,6 +11,7 @@ const Navbar = () => {
           <li><Link to="/services" className='nav-link'>Services</Link></li>
           <li><Link to="/contact" className='nav-link'>Contact</Link></li>
           <li><a href="/login" className='nav-link'>Login</a></li>
+          <li><a href="/reg" className='nav-link'>Registration</a></li>
       </ul>
   </div>
   </nav>
