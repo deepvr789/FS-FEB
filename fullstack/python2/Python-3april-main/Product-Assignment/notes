@@ -1,0 +1,25 @@
+CREATE TABLE product(
+pid int PRIMARY KEY,
+name varchar(50),
+price float,
+rating float,
+stock int,
+brand varchar(50),
+returnpolicy varchar(50)
+);
+
+    -> ;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| pid          | int         | NO   | PRI | NULL    |       |
+| name         | varchar(50) | YES  |     | NULL    |       |
+| price        | float       | YES  |     | NULL    |       |
+| rating       | float       | YES  |     | NULL    |       |
+| stock        | int         | YES  |     | NULL    |       |
+| brand        | varchar(50) | YES  |     | NULL    |       |
+| returnpolicy | varchar(50) | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+insert into product values(%s,%s,%s,%s,%s,%s,%s);

@@ -1,0 +1,4 @@
+#SyntaxError
+
+for():
+    pass

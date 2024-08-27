@@ -1,0 +1,7 @@
+Python IDE
+--------------
+Edit Plus
+Thonny
+VS Code 
+Jupyter Notebook
+Pycharm
